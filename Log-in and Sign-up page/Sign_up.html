@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        section h1 {
+            /* border: 2px solid red; */
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            display: block;
+            width: 123px;
+            margin: 0px 0px 40px 28%;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            font-size: 32px;
+            font-weight: bolder;
+        }
+
+        section::before {
+            content: "";
+            background: url("https://images.pexels.com/photos/256468/pexels-photo-256468.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            height: 669px;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        #content {
+            /* border: 2px solid blue; */
+            display: flex;
+            /* display: block; */
+            justify-content: center;
+            align-items: center;
+            margin: 0px 35% 0px 0px;
+        }
+
+        .form {
+            display: block;
+            width: 123px;
+            margin: 0px 151px 0px 0px;
+        }
+
+        .input {
+            border: 2px solid black;
+            width: 270px;
+            margin-bottom: 9px;
+            height: 22px;
+            border-radius: 6px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .input:hover {
+            /* border-radius: 0px; */
+            width: 280px;
+            height: 30px;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+        }
+
+        .label {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            display: block;
+            width: 160px;
+            margin: auto;
+            /* font-size: 12px; */
+        }
+
+        .btn {
+            display: inline-block;
+            border: 2px solid white;
+            background-color: #82888787;
+            padding: 6px 24px;
+            margin-top: 23px;
+            font-weight: lighter;
+            font-family: 'Abril Fatface', cursive;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 200px;
+            color: black;
+            margin-right: 12px;
+        }
+
+        .btn:hover {
+            /* border-radius: 0px; */
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        /* @media only screen and (max-width: 525px) {
+            section::before {
+                width: 100%;
+                height: 669px;
+                text-align: center;
+            }
+
+            section h1 {
+                color: #98f987;   
+                /* font-size: 61px;             */
+            /* }
+
+            #content {
+                width: 100%;
+                margin: auto;
+            }
+            .input{
+                width: 14rem;
+            }
+            .input:hover{
+                width: 14rem;
+
+            }
+
+            .label {
+                color: #3e9e03;
+            }
+
+            .btn {
+
+                border: 2px solid black;
+                background-color: #b5f99987;
+                color: #2e6b10;
+
+            }
+        } */
+
+        /* @media only screen and (max-width: 768px){
+            section::before{
+                width:100%;
+                height: 100%;
+            }
+            .label{
+                font-size: 1.8rem;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Sign Up</h1>
+        <div id="content">
+            <form action="action">
+                <div class="form">
+                    <label for="name" class="label">Name:</label>
+                    <input type="text" class="input" placeholder="Enter Your Name">
+                </div>
+                <div class="form">
+                    <label for="age" class="label">Age:</label>
+                    <input type="number" class="input" placeholder="Enter Your Age">
+                </div>
+                <div class="form">
+                    <label for="number" class="label">Mobile Number:</label>
+                    <input type="number" class="input" placeholder="Enter Your Mobile Number">
+                </div>
+                <div class="form">
+                    <label for="email" class="label">Email Id:</label>
+                    <input type="email" class="input" placeholder="Enter Your Email Id">
+                </div>
+                <div class="form">
+                    <label for="address" class="label">Address:</label>
+                    <input type="address" class="input" placeholder="Enter Your Address">
+                </div>
+                <div class="form">
+                    <label for="date" class="label">Joining Date:</label>
+                    <input type="date" class="input" placeholder="Enter Your Joining Date">
+                </div>
+                <div class="form">
+                    <label for="password" class="label">Password:</label>
+                    <input type="password" class="input" placeholder="Enter Your Password">
+                </div>
+                <div class="form">
+                    <label for="confirm" class="label">Confirm Password:</label>
+                    <input type="confirm" class="input" placeholder="Confirm Password">
+                </div>
+                <div>
+                    <a href="#" class="btn">Sign Up</a>
+                    <a href="Log_in.html" class="btn">Log in</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

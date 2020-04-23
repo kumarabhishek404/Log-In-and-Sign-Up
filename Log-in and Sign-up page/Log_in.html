@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section h1 {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            font-size: 32px;
+            font-weight: bolder;
+            text-align: center;
+            margin: 0px 360px 40px 0px;
+            padding-top: 150px;
+        }
+
+        section::before {
+            content: "";
+            background: url("https://images.pexels.com/photos/267885/pexels-photo-267885.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center/cover;
+            position: absolute;
+            width: 1321px;
+            height: 669px;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .content {
+            display: flex;
+            margin: 0px 350px 0px 0px;
+            justify-content: center;
+        }
+
+        .input {
+            border: 2px solid black;
+            width: 270px;
+            margin-bottom: 9px;
+            height: 22px;
+            border-radius: 6px;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        .input:hover {
+            /* border-radius: 0px; */
+            width: 280px;
+            height: 30px;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+        }
+
+        .label {
+            font-family: 'Abril Fatface', cursive;
+            color: white;
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            border: 2px solid white;
+            background-color: #82888787;
+            padding: 6px 24px;
+            margin-top: 23px;
+            font-weight: lighter;
+            font-family: 'Abril Fatface', cursive;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 200px;
+            color: black;
+            margin-right: 12px;
+        }
+
+        .btn:hover {
+            /* border-radius: 0px; */
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Log In</h1>
+        <div class="content">
+            <form action="action">
+                <div class="item">
+                    <label for="username" class="label">Username:</label>
+                    <input type="text" class="input" placeholder="Enter Your Name">
+                </div>
+                <div class="item">
+                    <label for="password" class="label">Password:</label>
+                    <input type="number" class="input" placeholder="Enter Your Password">
+                </div>
+                <div>
+                    <a href="#" class="btn">Log In</a>
+                    <a href="Sign_up.html" class="btn">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
